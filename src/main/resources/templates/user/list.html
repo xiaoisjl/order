@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>list.html</title>
+</head>
+<body>
+<h2>用户列表</h2>
+<div>
+    <ul>
+        <li th:each="user:${users}">
+            <p>ID:<span th:text="${user.id}"></span></p>
+            <p>名字:<span th:text="${user.name}"></span></p>
+        </li>
+    </ul>
+</div>
+</body>
+<script type="text/javascript">
+    alert("hhh");
+</script>
+</html>
