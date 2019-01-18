@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.song.order.controller","com.song.order.service"})
+@ComponentScan(basePackages = {"com.song.order.controller","com.song.order.service","com.song.order.config"})
 @MapperScan(basePackages = {"com.song.order.dao"})
 public class OrderApplication {
 
