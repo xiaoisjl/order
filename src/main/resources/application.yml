@@ -7,7 +7,7 @@ spring:
     url: jdbc:mysql://120.78.146.55:3306/order_project
     username: root
     password: root
-    # Ê¹ÓÃdruidÊı¾İÔ´
+    # ä½¿ç”¨druidæ•°æ®æº
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     filters: stat
@@ -34,9 +34,9 @@ spring:
     cache: false
 
 #
-### ¸ÃÅäÖÃ½ÚµãÎª¶ÀÁ¢µÄ½Úµã£¬ÓĞºÜ¶àÍ¬Ñ§ÈİÒ×½«Õâ¸öÅäÖÃ·ÅÔÚspringµÄ½ÚµãÏÂ£¬µ¼ÖÂÅäÖÃÎŞ·¨±»Ê¶±ğ
+### è¯¥é…ç½®èŠ‚ç‚¹ä¸ºç‹¬ç«‹çš„èŠ‚ç‚¹ï¼Œæœ‰å¾ˆå¤šåŒå­¦å®¹æ˜“å°†è¿™ä¸ªé…ç½®æ”¾åœ¨springçš„èŠ‚ç‚¹ä¸‹ï¼Œå¯¼è‡´é…ç½®æ— æ³•è¢«è¯†åˆ«
 mybatis:
-  mapper-locations: classpath:mybatis/mapper/*.xml  #×¢Òâ£ºÒ»¶¨Òª¶ÔÓ¦mapperÓ³ÉäxmlÎÄ¼şµÄËùÔÚÂ·¾¶
-  type-aliases-package: com.song.order.model  # ×¢Òâ£º¶ÔÓ¦ÊµÌåÀàµÄÂ·¾¶
+  mapper-locations: classpath:mybatis/mapper/*.xml  #æ³¨æ„ï¼šä¸€å®šè¦å¯¹åº”mapperæ˜ å°„xmlæ–‡ä»¶çš„æ‰€åœ¨è·¯å¾„
+  type-aliases-package: com.song.order.model  # æ³¨æ„ï¼šå¯¹åº”å®ä½“ç±»çš„è·¯å¾„
 
 
