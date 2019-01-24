@@ -1,6 +1,7 @@
 package com.song.order.dao;
 
 import com.song.order.model.User;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 public interface UserMapper {
@@ -15,4 +16,6 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    User findByUsername (String name);
 }
