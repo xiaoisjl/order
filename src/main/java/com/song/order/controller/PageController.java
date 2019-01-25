@@ -9,6 +9,6 @@ public class PageController {
 
     @RequestMapping("/{path}")
     public String pageRedirection(@PathVariable("path") String path) {
-        return "/" + path;
+        return path;
     }
 }
