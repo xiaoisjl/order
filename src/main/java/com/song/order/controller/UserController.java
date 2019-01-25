@@ -8,6 +8,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +28,7 @@ public class UserController {
         List<User> users = new ArrayList<>();
         users.add(user);
         model.addAttribute("users", users);
-        return "/user/list";
+        return "user/list";
     }
 
 
